@@ -19,6 +19,11 @@ public class Circle {  // Save as "Circle.java"
         color = "red";
     }
 
+    public Circle(double radius, String color) {
+        this.radius = radius;
+        this.color = color;
+    }
+
     /** Returns the radius */
     public double getRadius() {
         return radius;
@@ -27,5 +32,17 @@ public class Circle {  // Save as "Circle.java"
     /** Returns the area of this Circle instance */
     public double getArea() {
         return radius*radius*Math.PI;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }
